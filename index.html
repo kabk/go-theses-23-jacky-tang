@@ -1,11 +1,284 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Allegories in the Face Saloon</title>
+  <title>go-theses-jacky-tang_the-allegories-of-the-face-saloon</title>
   <style>
+    html {
+      line-height: 1,5;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 30px;
+      color: #000000;
+      background-color: #ffffff;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 50vw;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+
+    @media (max-width: 780px) {
+      body {
+        max-width: 100%;
+        font-size: 0.5em;
+        text-align: justify;
+        padding: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+    }
+
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+        width: 50%;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+
+    a {
+      color: blue;
+    }
+    a:visited {
+      color: #ff00ff;
+    }
+
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+
+    blockquote {
+      margin: 0;
+    }
+
+    .prologue{
+      width: 100vw;
+      left: -25vw;
+      margin: 0;
+      position: relative;
+      font-size: 48px;
+    }
+    .quote{
+      width: 50vw;
+      left: 0;
+      margin:0;
+      position: relative;
+      font-size: 36px;
+      font-style: italic;
+    }
+
+    @media screen and (max-width: 780px){
+      .prologue{
+        left:-20px;
+        font-size: 24px;
+      }
+      .quote{
+        left:-20px;
+        font-size: 24px;
+        width: 100vw;
+        font-style: italic;
+        
+      }
+    }
+
+    .margin-nav{
+        position:absolute;
+        display:inline;
+        width:25%;
+        left:0;
+        padding:0;
+        margin-top:0;
+        box-sizing: border-box;
+        height: 0;
+      }
+      @media screen and (max-width: 780px){
+        .margin-nav{
+          position:relative;
+          padding:0;
+          color: blue;
+          border:1px solid rgb(0, 0, 0);
+          background-color: yellow;
+          border-radius:10px;
+        }
+      }
+
+      img {
+        display:block;
+        max-inline-size: 100%;
+        position: relative;
+        padding: 0%;
+        margin: 0%;
+        border-radius: 100%;
+      }
+      @media screen and (max-width: 780px){
+        img{
+          position: relative;
+          max-width: 100vw;
+          left: -20px;
+        }
+      }
+      .img-caption{
+        text-align: center;
+        font-size: 12px;
+        font-weight: bolder;
+      }
+      .quote-caption{
+        left: 25px;
+        text-align: center;
+        font-size: 12px;
+        font-weight: bolder;
+      }
+      @media screen and (min-width: 781px){
+        img{
+          position: relative;
+          left: -25vw;
+          max-width: 25vw;
+        }
+        .img-caption{
+          position: relative;
+          left:-25vw;
+          max-width: 25vw;
+          text-align: left;
+        }
+        .quote-caption{
+          left: 25px;
+          text-align: center;
+          font-size: 12px;
+          font-weight: bolder;
+        }
+      }
+
+        .full-image{
+          border-radius: 0%;
+        }
+
+        .face-collection{
+          width: 100vw;
+          left:-25vw;
+          position: relative;
+          overflow: scroll;
+          display: flex;
+          background-color: blue;
+          align-items: center;
+        }
+        .img-face-collection{
+          left: 0vw;
+          height: 25vw;
+        }
+      @media screen and (max-width: 780px){
+        .face-collection{
+          width: 100vw;
+          display: flex;
+          flex-direction: row;
+          left:-20px;
+          flex-wrap:wrap;
+          align-content: center;
+          justify-content: center;
+        }
+        .img-face-collection{
+          left: 0vw;
+        }
+      }
+/*
+        img:hover{
+              z-index: 9999;
+            }
+            .margin-img{
+              position: absolute;
+              display: inline-flexbox;
+              width:25vw;
+              left: 0;
+              padding:0;
+              margin-top:0;
+              box-sizing: border-box;
+              height: 0;
+              font-size: 48px;
+            }
+            @media screen and (max-width: 780px){
+              .margin-img{
+                width: 50vw;
+                position:relative;
+                padding:0;
+              }
+            }
+*/
+    .margin-note{
+        z-index: 999;
+        position:absolute;
+        display:inline;
+        width:25%;
+        right:0;
+        font-size: 16px;
+      }
+    .margin-note:hover{
+      background: #ffffff;
+      border-radius: 10px;
+      color:#000000;
+    }
+    blockquote:hover{
+      z-index: 9999;
+      background: #FFFF00;
+    }
+      @media screen and (max-width: 780px){
+        .margin-note{
+          position:relative;
+          padding:0;
+          color: white;
+          border:1px solid rgb(0, 0, 0);
+          border-color: #ffffff;
+          background-color: black;
+          font-size: 12px;
+        }
+      }
+
+    .para-title{
+      font-weight: bold;
+    }
+
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -19,241 +292,322 @@
     }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
-  <link rel="stylesheet" href="style.css" />
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
 </head>
+
+
+
+
+
+
+
+
+
+
+
+
 <body>
-<header id="title-block-header">
-<h1 class="title">Allegories in the Face Saloon</h1>
-</header>
-<h1 id="allegories-in-the-face-saloon">Allegories in the Face
-Saloon</h1>
-<p><img src="example.png" class="image" /> <img src="example2.png"
-class="image" /></p>
-<h2 id="rewriting-the-theatrics-of-face-reading">Rewriting The Theatrics
-of Face Reading</h2>
-<h3 id="research-question">Research question</h3>
-<p>How does the human face act as a communication tool in the
-intersection with the semiotics and semiology of Chinese theater? This
-question is being answered in the framework of a visitation to a face
-reader.</p>
-<h3 id="plot--allegories-in-the-face-saloon">Plot — “Allegories in the
-Face Saloon”</h3>
-<p>The first person perspective (the audience) remembers an instance,
-where a colleague explained his first encounter with a woman, shrimp
-lady. He recounts how this colleague, office gnome, put emphasis on the
-facial structure of the lady and the correlation of this to her foul
-personality traits, all interpreted through a first glance. The first
-person perspective’s interest is piqued and decides to visit a seer in a
-face reading shop to learn more about the estranging world of the
-theatrics of face reading.</p>
-<h3 id="abstract">Abstract</h3>
-<p>Inspired by theater scripts, this thesis will be narrated through
-four characters, each representing a different archetype in Chinese
-Opera. The office gnome is represented by Cao Cao, the penultimate grand
-chancellor of the Eastern Han dynasty, often given white facial makeup
-to reflect his treacherous personality. The shrimp lady stands as the
-clown archetype, the comic of the piece, who often uses colloquial
-language. The seer, who owns the shop, is represented by the judge
-character. The audience lives vicariously through the first person
-perspective in the story, represented by the face reading chart. The
-audience discovers together with the seer philosophy and theory around
-the semantics and semiotics of theater, but will also delve deeper into
-concepts such as dramaturgy and performativity. I’m using a theoretic
-framework from Steward Hall, Roland Barthes, Goffman Erving and Judith
-Butler.</p>
-<section id="table-of-content" class="table">
-<h1>Table of Content</h1>
-<h3 id="introduction">Introduction</h3>
-<p>How does the human face act as a communication tool in the
-intersection with the semiotics and semiology of Chinese theater? Can we
-design our face? Is a human face a visual communication tool/symbol?
-Looking at the Chinese opera theater as a framework.</p>
-<h3 id="the-storefront-entering-the-store">The Storefront (entering the
-store)</h3>
-<h3
-id="office-gnome-recounting-the-office-gnomes-judgement-on-shrimp-lady">Office
-Gnome (recounting the office gnomes judgement on shrimp lady)</h3>
-<h3 id="shrimp-lady-recounting-shrimp-ladys-appearance">Shrimp Lady
-(recounting shrimp lady’s appearance)</h3>
-<h3 id="the-seer-meeting-the-seer">The Seer (meeting the seer)</h3>
-<p>The face as an interface</p>
-<p>The semiotics of the face</p>
-<p>Face-to-face interactions (dramaturgical analysis)</p>
-<p>Performativity of the face</p>
-<p>The spectacle of the face</p>
-<p>The face in Chinese Opera</p>
-<p>Can we design our face? Fate vs. free will</p>
-<h3 id="conclusion-">Conclusion</h3>
-</section>
-<p>::: ### The Storefront (1st person POV)
-{#the-storefront-1st-person-pov } The storefront, a big glass window
-decorated with bright rainbow LED fairy lights. The curtains, semi
-transparant. The display window, filled with acupuncture models, a big
-A1 portrait face reading poster with sloppy typography and a magenta
-plasma ball shaped into the Buddha’s head. The tone and the atmosphere
-is set. When I enter the shop, I hear the sound of wind chimes
-resonating through the space. The only two other sounds I could hear was
-the humming of a little minibar sticking out from the small reception
-desk and the ticking of an elegant antic wooden pendulum clock.</p>
-<h3 id="office-gnome-cao-cao">Office Gnome (Cao Cao)</h3>
-<p>Ever since I heard my colleague tell me how he disliked this lady he
-met at church upon first glance, I was intrigued why he would make such
-a resolute judgement. The sentence I remember, was something along the
-lines of “Her face isn’t too auspicious.” It got me curious to find out
-what is so unlucky about this person’s face. Are we speaking of pretty
-privilege and how owning a conventionally unattractive face would lend
-you to a harsher treatment by others or is it just a euphemism to
-shadily say the same thing “She’s a shrimp. A seafood, mostly consumed
-for their meat, but their head is discarded right into the trash bin. In
-other words. She’s unlucky to be born with such a unpleasant face.”</p>
-<h3 id="shrimp-lady-clown">Shrimp Lady (Clown)</h3>
-<p>However, when I finally met this lady from the church, I was
-perplexed, why he’d deem her un-beautiful. She is actually ticking all
-the boxes of a gorgeous woman. She has plump lips, big eyes, a beauty
-mark on her left eyelid and stern eyebrows. The only thing I could
-imagine not conforming to his standards would be that her jawline is
-slightly too big for her face. I don’t mind a strong jawline… I saw a
-shadow move through the hallway towards the main area, making the bead
-curtain going click-clack.</p>
-<h3 id="the-seer-daoist-monk">The Seer (Daoist Monk)</h3>
-<p>A man in his mid 40s made his way to the reception desk, slouching
-the slippers along the black and white tiled floor. Halfway through his
-walk, he noticed where I was standing and waved his long fingered hands
-at me. “Hello, how could I help you out?” I noticed he had a black
-tattoo of a Peking opera performer on his wrist. A face that showed
-dominance, as if he holds authority. Dooming and stern. Judgement
-day.</p>
-<h3 id="the-face">The Face</h3>
-<p>A face. An animal’s front side of the head, where the eyes, nose,
-mouth are located. Together with an organism’s butthole, it’s one of the
-most fundamental body parts our animal species have been developing over
-the past millions of years. No wonder linguistically and etymologically,
-the term ‘face’ has the following different meanings. The face of the
-mountain (front side something). Losing face (losing one’s dignity). To
-pull down one’s facade (a front you put up to hide real emotions). An
-animal’s organ that’s so important to its existence. While it’s a
-survival tool of consumption, breathing and stimulation of its senses,
-it’s also become one of the most vulnerable body part for an organism. A
-variety of muscle contractions and nerve twitches have made it, so
-that’s easy to read one’s intentions or thoughts, through the emotions
-one is emitting. In turn, this allows cunning opportunistic predators to
-read their prey and attack them when they least expect it. The face has
-now become a communication tool. Are you comfortable, scared, happy,
-tired, or perhaps diseased? Are you uncomfortable, angry, assertive,
-sad, or healthy? Your face speaks volumes. Before we read words or
-decoded voices, we in fact had the 1.0 hardware of communication. Facial
-expressions.</p>
-<h3 id="linguistic-semiotics-and-semantics">Linguistic Semiotics and
-Semantics</h3>
-<p>As Roland Barthes, argues within semiology there’s different
-components in the communication of codified visuals. He argues that
-there’s a messenger and a receiver. The messenger who emits a code, in
-whatever visual form, and a receiver, who receives a codified visual
-image. This code will be interpreted and decoded to make further
-actions. No wonder why words associated with our face, such as,
-impressive or expressive have made it into different languages. It’s
-exactly that physical exchange of information that the face has been
-facilitating. Impression and expression. Inhaling and exhaling. Winking
-and seeing. Singing and hearing. Of course, we as a species have
-understood this game of communication for a while now. Otherwise, we
-wouldn’t have been here today, hasn’t it been for our survival skills.
-We’ve noticed that other than just reading a face you can also ‘write’ a
-face, in other words, we know how to manipulate the expression of true
-emotions in order to gain something from it. This thing to gain, might
-be approval of a community around you, not sticking out to get picked on
-or just to have power in negotiating.</p>
-<h3 id="dramaturgy">Dramaturgy</h3>
-<p>In sociology, above mentioned manipulation of communication is also
-understood as part of Goffman Erving’s dramaturgical analysis. He argues
-that face-to-face interactions between people are always an attempt to
-control or guide the impression others make of them by manipulating
-their setting, appearance and manner. At the same time, the other
-individual is trying to form and obtain information about the other. We
-are constantly performing our emotions, dependant on the society one was
-raised in, what social occasion one is at, or simply to emphasise your
-emotion to yourself. Therefore, I argue we have an innate and intimate
-connection to the art of performance and theater. Our facial expressions
-are in fact a theatrical and spectacular phenomenon. The Theatrics of
-Face Reading what are the different rituals in the act of face reading?
-Face reading, also known as physiognomy, is a cultural practice, that
-requires a face reader (a shaman or fortune-teller), who interprets
-facial features to give a peek into one’s future or personality traits.
-The HR of the middle ages. Culturally biased opinions on beauty and
-morality of course are embedded in these practices, which I’m not
-arguing against; it’s a pseudoscience. However, my fascination stems
-from the fact that it shows how much a person could be concerned about
-one’s face. We want to control something that was given to us by mother
-nature and seek deeper meaning in the materiality of our body. In fact,
-physiognomy and shamanism are believed to be the primitive precedence of
-current day Chinese Opera. If we focus on the performative aspect of
-emoting with our face, we can even abridge this theory further into the
-origins of theater. I’ll specifically focus on Peking opera and the
-painted face still as a communication tool. In the Chinese canon of
-operatic performances, we see a specifically signified layer of symbolic
-face paint that tell a story to the audience, beyond the facial
-performativity of the actor. This had a reason. In order to be
-democratic and perform for anyone, even illiterate people (which was
-most of people in the feudal Dynastic periods), the sung lyrics were not
-the only way of expressing a narrative, but additional background
-information, characterisation and archetyping was expressed through
-aesthetic symbols on the face of the actor.</p>
-<h3 id="the-performance--chinese-opera">The Performance — Chinese
-Opera</h3>
-<p>An art form that has never been unified or homogenised and has always
-been developing over centuries of time amongst different genres and
-localisations. That’s what Chinese Opera is. However, over the last
-century, we’ve seen a big decrease of the performance of this Opera
-style affected by a range of different factors. The opera form has
-always been influenced by big historical events, such as the
-proliferation of the art form during the Mongol rule in the Yuan
-Dynasty, or the propagandising of the Opera during the Cultural
-Revolution. Nowadays, the performance style has lost a lot of interest
-from the younger generation, despite government funding. We see new ways
-of adaptation of the opera, such as the digitisation of the stage, the
-usage of social media as platform or the borrowing of contemporary
-western theatre stage design, But also the usage of these Chinese
-Operatic aesthetics in other forms of art, like fashion photoshoots,
-games, tourism and films. I’m interested in the semiotic and semantic
-structures that lay beneath the Chinese Opera. How can I as a graphic
-designer use this skeleton of a living fossil, reappropriate it and
-design my own Opera for it? Perhaps I can focus specifically on the face
-make-up, since I’m worrying about the scope of the entire Opera. :::</p>
-<section id="bibliography" style="background-color: green">
-<h1>Bibliography</h1>
-<p>Goffman, Erving. The Presentation of Self in Everyday Life. Overlook,
-1973.</p>
-<p>Beato, Massimo Roberto. “From Mask to Flesh and Back: A Semiotic
-Analysis of the Actor’s Face between Theatre and Cinema.” Topoi,
-vol. 41, no. 4, 2022, pp. 755–769.,
-https://doi.org/10.1007/s11245-022-09808-y.</p>
-<p>Jack, R. E., &amp; Schyns, P. G. (2015). The human face as a dynamic
-tool for Social Communication. Current Biology, 25(14).
-https://doi.org/10.1016/j.cub.2015.05.052</p>
-<p>Zhang, N. (1987). A Semiotic Study of the Chinese Theater
-(thesis).</p>
-<p>Hall, S., Griffith, E. D., &amp; Hall, S. (1991). The work of
-representation.</p>
-<p>Posted by Jena A Zelezny on October 6, 2014 at 10:44 V. B.
-(n.d.).</p>
-<p>Judith Butler: Performativity and dramaturgy. Performance Philosophy.
-Retrieved January 17, 2023, from
-https://performancephilosophy.ning.com/profiles/blogs/judith-butler-performativity-and-dramaturgy</p>
-</section>
-<pre><code># Hello World
+  <p>Allegories in the Face Saloon</p>
+  <p>Rewriting The Theatrics of Face Reading</p>
+
+
+
+  <p class="navnote"> <a id="nnref-1" href="#nn-1">Abstract</a>
+    <span class="margin-nav" id="nn-1" value="1">
+      <a href="#nnref-1">abstract</a>
+      abstract
+      <span class="navnotereverse"></span>
+  </p>
+  <p>An experimental document that combines prose with short form fiction, to research the human face as a communication tool in context of linguistics, the myth and the spectacle, dramaturgy, Chinese theatre, face reading and control. Having touched upon all these topics, we’re left with humanity and storytelling.</p>
+
+
+  <p class="navnote"> <a id="nnref-2" href="#nn-2">Prologue</a>
+    <span class="margin-nav" id="nn-2" value="2">
+      <a href="#nnref-2">prologue</a>
+      prologue
+      <span class="navnotereverse"></span>
+  </p>
+  <div class="prologue">
+    <p>Before we designed typefaces, we arranged the letter press. Before the letterpress, we copied manuscripts. Before the written word, letters were forming through drawings of elements around us. Before we saw our prey with our eyes, we felt them with our malleable lips, we smelt them with our delicate nostrils, we tasted them with our slimy tongue. How does the human face act in visual communication as a tool of articulation?</p>
+    <p>I’m curious to find out through a lengthy, endless, but in-exhaustive investigation, where I find meaning through cases looking in the past, such as the usage of the face in Chinese opera and face reading, but also future scenarios that embody future obstacles we may face, due to biases we hold from our own imperfect worldview, carried into powerful technology.</p>
+    <p>Because if you think about it for a second. Our face is biometrics. Our face is a meme, a joke, a one-liner. Our face is a business card. Our face is a target. Our face is a disguise. Our face is written, read, annotated and rewritten. Our face is an open book, a myth, a tragedy. Our face is not singular, we have many faces. Our face is a performance. Our face is never the same. Our face is corrupted. Our face is a tool. Our face is controlled. Our face is a stage; a full production, like a set. Our face is a facade. Our face is a storefront.</p>
+    <p>The face might be a storefront…</p>
+    <p>The opening hours of the store are…</p>
+  </div>
   
-## This is a subtitle
+
+
+  <p class="navnote"> <a id="nnref-3" href="#nn-3">The face as an interface</a>
+    <span class="margin-nav" id="nn-3" value="3">
+      <a href="#nnref-3">1.</a>
+      1
+      <span class="navnotereverse"></span>
+  </p>
+  <p>A face. An animal’s front side of the head, where the eyes, nose, mouth are located. Together with an organism’s butthole, it’s one of the most fundamental body parts our animal species have been developing over the past millions of years.</p>
+<!--
+  <p class="imgnote"> <a id="imgref-1" href="#imgn-1">Heidi Klum Face</a>
+    <span class="margin-img" id="imgn-1" value="1">
+      <a href="#imgnref-1">
+        <img alt="Heidi's face" src="media/image1.jpg">
+      </a>
+      <span class="imgnotereverse"></span>
+  </p>
+  <p class="imgnote"> <a id="imgref-2" href="#imgn-2">Heidi Klum Body</a>
+    <span class="margin-img" id="imgn-2" value="2">
+      <a href="#imgnref-2">
+        <img alt="Heidi's outfit" src="media/image2.jpg">
+      </a>
+      <span class="imgnotereverse"></span>
+  </p>
+-->
+  <img src="media/image1.jpg" alt="Heidi Klum face"/>
+  <img src="media/image2.jpg" class="full-image" alt="Heidi Klum outfit"/>
+  <p class="img-caption">Heidi Klum as a worm for halloween 2022</p>
+
+  <p>No wonder linguistically and etymologically, the term ‘face’ has  for instance the following different meanings.
+    The face of the mountain (front side something).</p>
+
+  <ol>
+    <li>The face of the mountain (front side something).</li>
+    <li>Losing face (losing one’s dignity).</li>
+    <li>To let down one’s facade (a front you put up to hide real emotions).</li>
+  </ol>
+
+  <img src="media/image3.jpg" alt="Mount Rushmore"/>
+  <p class="img-caption">Mount Rushmore, showing the full size of the mountain and scree of rocks below from sculpting and construction</p>
+  <img src="media/image4.jpg" alt="Mao Zedong statue"/>
+  <p class="img-caption">The young Mao Zedong statue is located on Orange Isle in Changsha, Hunan</p>
+  <img src="media/image5.jpg" alt="Buddha head"/>
+  <p class="img-caption">Giant Buddha head hidden in the mountains of Guiyang</p>
+
+  <div class="face-collection">
+    <img src="media/image6.1.jpg" class="img-face-collection" alt="Faces on facades"/>
+    <img src="media/image6.2.jpg" class="img-face-collection" alt="Faces on facades"/>
+    <img src="media/image6.3.jpg" class="img-face-collection" alt="Faces on facades"/>
+    <img src="media/image6.4.jpg" class="img-face-collection" alt="Faces on facades"/>
+    <img src="media/image6.5.jpg" class="img-face-collection" alt="Faces on facades"/>
+  </div>
+  <p class="img-caption">Collection of faces on facades of variety of buildings</p>
+
+	<p>An animal’s organ that’s so important to its existence. While it’s a survival tool of consumption, breathing and stimulation of its senses, it’s also become one of the most vulnerable body part for an organism.</p>
+  <p>A variety of muscle contractions and nerve twitches, the so-called facial expressions, have made it, so that’s easy to read one’s intentions or thoughts, through the emotions one is emitting. In turn, this allows cunning opportunistic predators to read their prey and attack them when they least expect it.</p>
+
+	<img src="media/image7.jpg" alt="Math/Confused Lady"/>
+  <p class="img-caption">Tedesco in brazilian telenovela Senhora do Destino, as Math/Confused lady</p>
+
+	<p>The face has now become a communication tool. Are you comfortable, scared, happy, tired, or perhaps diseased? Are you uncomfortable, angry, assertive, sad, or healthy? Your face speaks volumes. Before civilisations invented language and therefore read words or decoded voices, we in fact had the 1.0 hardware of communication. Facial expressions.<sup class="footnote"><a id="fnref-1" href="#fn-1">1<br></a></sup> <span class="margin-note" id="fn-1" value="1"><a href="#fnref-1">↩1</a> Jack, R. E., & Schyns, P. G. (2015). The human face as a dynamic tool for Social Communication. Current Biology, 25(14). https://doi.org/10.1016/j.cub.2015.05.052.<span class="footnotereverse"></p>
+
+  <img src="media/image8.jpg" alt="Sophia; first robot citizen"/>
+  <p class="img-caption">Sophia, First Robot Citizen at the AI for Good Global Summit 2018</p>
+
+	<p>Facial expressions have the power to convey communicational signs and therefore it’s tempting to believe in the universality hypothesis, especially from a Darwinist point of view. This idea of universal facial expressions through evolutionary assigned behaviour is highly disputed however. Even though, we have evolutionarily evolved shared emotions of fear and disgust, originally serving as an adaptive function, facial expressions have ever since evolved and diversified to serve primarily as emotion communication in social interactions.<sup class="footnote"><a id="fnref-2" href="#fn-2">2<br></a></sup> <span class="margin-note" id="fn-2" value="2"><a href="#fnref-2">↩2</a> Jack, R. E., Garrod, O. G., Yu, H., Caldara, R., & Schyns, P. G. (2012). Facial expressions of emotion are not culturally universal. Proceedings of the National Academy of Sciences, 109(19), 7241–7244. https://doi.org/10.1073/pnas.1200155109.<span class="footnotereverse"></span></p>
+	<p>Hence, I suggest to consider that my perspective is speaking mostly from the perspective of European Theatre and dramaturgy, Chinese face reading and Chinese Opera, which in and of itself already are in different cultural spheres. Analysing the face and its facial expressions are positioned in a nuanced and the broader context of the culture in which these are found.</p>
+
+
+
+  <p class="navnote"> <a id="nnref-4" href="#nn-4">The semiotics of the face</a>
+    <span class="margin-nav" id="nn-4" value="4">
+      <a href="#nnref-4">2.</a>
+      2
+      <span class="navnotereverse"></span>
+  </p>
+  <p>Having introduced the face as a tool for visual communication, we can even go further in terms of reading meaning in the face. In this chapter, I’d like to connect the linguistic tradition of semiology and semantics to the visual communication by the face.</p>
+	<p>As Saussure, argues within semiology there’s different components in the communication of codified visuals. He argues that there’s a messenger and a receiver. The messenger who emits a code, in whatever visual form, and a receiver, who receives a codified visual image. This code will be interpreted and decoded to make further actions.<sup class="footnote"><a id="fnref-3" href="#fn-3">3<br></a></sup> <span class="margin-note" id="fn-3" value="3"><a href="#fnref-3">↩3</a> Hall, Stuart. (1997). The work of representation. In Representation: Cultural Representations and Signifying Practices, edited by Stuart Hall, (pp. 13–69). London: SAGE.<span class="footnotereverse"></span></p>
+  <p>The words impressive and expressive illustratively describe the semiotic mechanism in which we produce meaning. It’s exactly that physical exchange of information that the face has been facilitating. Impression and expression. Inhaling and exhaling. Winking and seeing. Singing and hearing. Kissing and being kissed.</p>
+	<p>Here you can see the model of communication. Where Stuart Hall argues that we encode and decode messages to form a bigger discourse of meaning.</p>
+
+  <img src="media/image9.1.jpg" class="full-image" alt="Model of communication 1"/>
+  <img src="media/image9.2.jpg" class="full-image" alt="Model of communication 2"/>
+  <p class="img-caption">Saussure and the model of communication</p>
+  <img src="media/image10.jpg" class="full-image" alt="Encoding/deconding model"/>
+  <p class="img-caption">Hall and encoding/decoding model</p>
+  <img src="media/image11.jpg" class="full-image" alt="pasted-image.tiff"/>
+  <p class="img-caption">Roland Barthes' myth model</p>
+
+  <p>Roland Barthes adds to the idea of the signifier and the signified the idea of the myth. He goes to explain that on top of the initial literal reading of images through representation of the signified and signifier, which denotes a simple message, there’ could be another deeper meaning hidden within the composition. This second layer of signification is what he calls, the myth. Roland Barthes elaborates that this myth could be found in different manifestations:<sup class="footnote"><a id="fnref-4" href="#fn-4">4<br></a></sup> <span class="margin-note" id="fn-4" value="4"><a href="#fnref-4">↩4</a> Hall, Stuart. (1997). READING C: Roland Barthes ‘Myth today’, The work of representation. In Representation: Cultural Representations and Signifying Practices, edited by Stuart Hall, (pp. 13–69). London: SAGE.<span class="footnotereverse"></span></p>
+  <blockquote class="quote">“We must here recall that the materials of mythical speech (the language itself, photography, painting, posters, rituals, objects, etc.), however different at the start, are reduced to a pure signifying function as soon as they are caught by myth. Myth sees in them only the same raw material; their unity is that they all come down to the status of a mere language. Whether it deals with alphabetical or pictorial writing, myth wants to see in them only a sum of signs, a global sign, the final term of a first semiological chain. And it is precisely this final term which will become the first term of the greater system which it builds and of which it is only a part.”</blockquote>
+  <p class="quote-caption">Reading C: ‘Myth Today’ - Roland Barthes</p>
+	<p>He continues calling these different manifestations the language-objects, because it is the language which the myth gets hold of in order to build its own system.</p>
+
+  <img src="media/image12.jpg" alt="Signifier and signified model"/>
+  <p class="img-caption">The signifier and signified model by Saussure</p>
+  <img src="media/image13.jpg" class="full-image" alt="Pioneer plaque"/>
+  <p class="img-caption">The illustration on the Pioneer plaque</p> 
+
+  <p>Of course, we as a species have understood this game of communication for a while now. Otherwise, we wouldn’t have been here today, hasn’t it been for our survival skills. We’ve noticed that other than just reading a face you can also ‘write’ a face.</p>
+
+  <img src="media/image14.jpg" alt="Zhang Huan, Family Tree (2000)"/>
+  <p class="img-caption">Zhang Huan, Family Tree (detail), 2000, C-type prints.Suite of 9 images. Collection: Gene & Brian Sherman, Sydney</p> 
+
+  <p>In other words, we know how to manipulate the expression of true emotions in order to gain something from it. This thing to gain, might be approval of a community around you, not sticking out to get picked on or just to have power in negotiating.</p>
+  <p>All in all, we see that within the circle of theorists on semiotics, there’s been conceptualisation of how we as humans read images and how there’s been an extension of linguistics language analysis to a visual cultural analysis.</p>
+  <p>Here, we see a connection to the same way Chinese Opera has operated for centuries and as well the complex cultural phenomenon of face reading. The former being encoding a message to the audience, while the latter is a centuries old tradition and cultural context of reading ‘the myth’ off from someone’s face. A mythical exercise of reading one’s fortune and letting one’s fortune be read in a mystical setting.</p>
+	
+  <img src="media/image15.jpg" alt="Fortuneteller, Li Fai"/>
+  <p class="img-caption">Fortuneteller, Images related to Shanghai and other Chinese cities, 1866-1900. Li Fai.</p> 
+
+
+
+  <p class="navnote"> <a id="nnref-5" href="#nn-5">Performativity and dramaturgy</a>
+    <span class="margin-nav" id="nn-5" value="5">
+      <a href="#nnref-5">3.</a>
+      3
+      <span class="navnotereverse"></span>
+  </p>
+  <p>There’s a close relationship between the concept of performativity and dramaturgy in the context of linguistics and the creation of meaning. This chapter shows how theoretically our physical and social face is closely related to theatre and its inner workings (dramaturgy).</p>
   
-[Simply some text]{ .biggie }
+  <p>Judith Butler argues that the difference between how language creates meaning and the theory of performativity in dramaturgy is a performative act itself. A performative act is in fact a combination of both, if we look at J. L. Austin’s thoughts on the primary use of language. He believes that making statements or formulating propositions isn’t the main purpose of language, but in fact it is the communication of meaning and intentions, that have consequences; a “speech act” if you will. Austin continues to distinguish “illocutionary” from “perlocutionary” speech acts. The former does what it says by saying in the moment of saying, while the latter produces a certain effect as their consequence. Austin relates these perlocutionary speech acts to have social impact and therefore sees it as a public ritual.<sup class="footnote"><a id="fnref-5" href="#fn-5">5<br></a></sup> <span class="margin-note" id="fn-5" value="5"><a href="#fnref-5">↩5</a> Zelezny, J. A. (2014, October 6). Judith Butler: Performativity and dramaturgy. Performance Philosophy. Retrieved February 20, 2023, from https://www.performancephilosophy.org/2014/10/06/judith-butler-performativity-and-dramaturgy/.<span class="footnotereverse"></span></p>
   
-I want a *bold* text
+  <img src="media/image16.jpg" class="full-image" alt="Speech acts"/>
+  <p class="img-caption">Speech acts by J. L. Austin.</p> 
+
+  <p>However, unfortunately, not all utterances of the performative are successful and are de-fused, leading to discontinuity in communication. This phenomenon is described by Bertolt Brecht as the “Verfremdungseffekt”. Austin’s Schema classifies for a “happy/felicitous” and a “unhappy/infelicitous” performative. The latter being cases where flaws in completion of conventions are apparent or where abuses occur. We can easily see how this “impression management”, or lack thereof, creates conflict and drama, the basis of the human condition and the basics for a theatrical drama play.<sup class="footnote"><a id="fnref-6" href="#fn-6">6<br></a></sup> <span class="margin-note" id="fn-6" value="6"><a href="#fnref-6">↩6</a> Ibid.<span class="footnotereverse"></span></p>
+  <p class="para-title">Face-to-face interactions (dramaturgical analysis)</p>
+  <p>In sociology, above mentioned manipulation of communication is also understood as part of Goffman Erving’s dramaturgical analysis, The Presentation of Self in Everyday Life. He argues that face-to-face interactions between people are always an attempt to control or guide the impression others make of them by manipulating their setting, appearance and manner. At the same time, the other individual is trying to form and obtain information about the other.</p>
+  <p>We are constantly performing our emotions, dependant on the society one was raised in, what social occasion one is at, or simply to emphasise your emotion to yourself. Performativity of the face having both a back region and a front region (backstage vs. on stage), which allows us to have an intimate emotion, kept secret to ourselves, and a publicly shared one, performed for an audience.<sup class="footnote"><a id="fnref-7" href="#fn-7">7<br></a></sup> <span class="margin-note" id="fn-7" value="7"><a href="#fnref-7">↩7</a> Goffman, E. (1973). The presentation of self in everyday life. Overlook.<span class="footnotereverse"></span></p>
+  <p>Therefore, I argue we have an innate and intimate connection to the art of performance and theatre. Our facial expressions are in fact a theatrical and spectacular phenomenon.</p>
+
+
+
+  <p class="navnote"> <a id="nnref-6" href="#nn-6">The spectacular face</a>
+    <span class="margin-nav" id="nn-6" value="6">
+      <a href="#nnref-6">4.</a>
+      4
+      <span class="navnotereverse"></span>
+  </p>
+  <p>The face is mesmerising. A stage where myths and stories are unfolded, one wink, one breath and one frown at a time. Despite this visual language that expresses minute nuances, it’s considered that our visual communication customs are learnt behaviour and differs from group to group. Even the “white canvas” that clowns paint their face to erase their facial features is signified and bears connotations.</p>
+
+  <img src="media/image17.jpg" alt="Jean-Charles Deburau as pierrot"/>
+  <p class="img-caption">Jean-Charles Deburau as pierrot By Nadar & Adrien Tournachon (1855)</p>
+
+	<p>Stuart Hall touches on the conversation of ‘othering’ based on physical differences in The Spectacle of The ‘Other’.   In ways we can compare the terms ‘myth’ and ‘spectacle’ to each other. While the ‘myth’ is a symbolic representation of a grammatical expression, the ‘spectacle takes it a step further, often related to economic incentive, political agendas and commodification.<sup class="footnote"><a id="fnref-8" href="#fn-8">8<br></a></sup> <span class="margin-note" id="fn-8" value="8"><a href="#fnref-8">↩8</a> Hall, Stuart. (1997). The Spectacle of the ‘Other.’ In Representation: Cultural Representations and Signifying Practices, edited by Stuart Hall, (pp. 223–290). London: SAGE.<span class="footnotereverse"></span></p>
+	<p>He argues that around the turn of 20th century, the development of businesses advertising objects to the Victorian middle classes provided an ‘imaginary way of relating to the real world’ of commodity production. Richards claims it’s a ‘spectacle’, since ‘advertising translated things into a fantasy visual display of signs and symbols.’ The production of commodities became linked to Empire - the search for markets and raw materials abroad supplanting other motives for imperial expansion. It doesn’t seem like your face is just another John Doe in the age of rapid expansionism, globalisation and imperialism after all. In fact, self-mythologising and spectating the other became the norm on a mass scale due to the technological age we embarked into.<sup class="footnote"><a id="fnref-9" href="#fn-9">9<br></a></sup> <span class="margin-note" id="fn-9" value="9"><a href="#fnref-9">↩9</a> Ibid.<span class="footnotereverse"></span></p>
+
+  <img src="media/image18.jpg" alt="Pears' soap advertisements"/>
+  <p class="img-caption">FIGURE 4.8 Nineteenth-century advertisements for Pears' soap - CHAPTER 4 THE SPECTACLE OF THE ‘OTHER’, Stuart hall</p>
   
-::: { style=&quot;background-color: pink&quot; }
+	<p>Hall continues to illustrate how this ‘spectacle’ carries itself out in a schismatic way, in his example of the Black male body. He calls this spectacle the sculptural code, influenced by the enamoured Greek and sculptors’ creations, imagining the most athletic bodies they knew. This sculptural code is then superimposed on the stereotype of the black man as a sports hero; “mythologically endowed with a 'naturally' muscular physique and an essential capacity for strength, grace and machinelike perfection: well hard.” It is exactly this area where the schism of white male ambivalence, fear and fantasy appear. The black bodies triumphs in rituals of masculine competition, which reinforces and idolises the Other to a point of envy. Tabloids that translate these sentiments into headlines of black males becoming a peril and danger to the Caucasian population, as thugs, rapists, terrorists and crooks:<sup class="footnote"><a id="fnref-10" href="#fn-10">10<br></a></sup> <span class="margin-note" id="fn-10" value="10"><a href="#fnref-10">↩10</a> Ibid.<span class="footnotereverse"></span></p>
   
-The content of this div is boring
+  <blockquote class="quote">"their bodies become the imago of a savage and unstoppable capacity for destruction and violence.”</blockquote>
+  <p class="quote-caption">READING D: Kobena Mercer, 'Reading racial fetishism'' -CHAPTER 4 THE SPECTACLE OF THE ‘OTHER’, Stuart hall</p>
+ 
+  <blockquote class="quote">“(a) the construction of 'otherness' and exclusion; (b) stereotyping and power; (c) the role of fantasy; and (d) fetishism.”</blockquote>
+  <p class="quote-caption">The 4 steps of signifying practice of stereotyping.</p>
   
-:::</code></pre>
+  <p>Such stereotypes were then materialised into reductive representations of the Other race, a ‘racialised regime of representation’. Again, there’s an economic and political incentive, perpetuating that not all races are equal, allowing the imperialist forces to justify racial supremacy. Simultaneously were:<sup class="footnote"><a id="fnref-11" href="#fn-11">11<br></a></sup> <span class="margin-note" id="fn-11" value="11"><a href="#fnref-11">↩11</a> Ibid.<span class="footnotereverse"></span></p>
+
+  <blockquote class="quote">“black people … reduced to the signifiers of their physical difference — thick lips, fuzzy hair, broad face and nose, and so on. For example, that figure of fun who, as doll and marmalade emblem, has amused little children down the ages: the Golliwog.”</blockquote>
+  <p class="quote-caption">2. Racialising the ‘other’ - CHAPTER 4 THE SPECTACLE OF THE ‘OTHER’, Stuart hall</p>
+
+  <img src="media/image19.jpg" alt="German caricature of man viewing the Hottentot Venus"/>
+  <p class="img-caption">FIGURE 4.26 German caricature of man viewing the Hottentot Venus through a telescope, early nineteenth century -CHAPTER 4 THE SPECTACLE OF THE ‘OTHER’, Stuart hall</p>
+
+
+  
+  <p class="navnote"> <a id="nnref-7" href="#nn-7">Read Chinese physiognomic face</a>
+    <span class="margin-nav" id="nn-7" value="7">
+      <a href="#nnref-6">5.</a>
+      5
+      <span class="navnotereverse"></span>
+  </p>
+  <p>While physiognomy works with archetypical physical features to one’s personality, it’s not there to intentionally harm people. However, keeping in mind how wired we can become to certain thought patterns and propaganda, it’s important for me acknowledge the similar traits to the discussed above and the next topic.</p>
+	<p>Face reading, also known as telling fortune based on the Chinese physiognomy, is a cultural practice, that requires a face reader (a shaman or fortune-teller), who interprets facial features to give a peek into one’s future or personality traits. The seer could be seen as the vocation consultant and the face itself as a business card of feudalistic China. Culturally biased opinions on beauty and morality of course are embedded in these practices, which I’m not arguing against; face readers never claim to be scientific or above the law of nature.</p>
+	<p>Knowing that this practice is taken with a grain of salt, still has me feeling disagreeable to gather from online manuals that having a small forehead and a wide jaw means that you have a difficult personality. It’s rather the lack of willpower of oneself or sovereignty to change despite having inherited a specific appearance.</p>
+	<p>After a short online chat with an amateur in feng shui and face reading, I’ve learnt that in fact, most face reading divinators are either experts and highly politically connected or amateurs, who don’t bother to share their interest. People also seek  help from a seer due to psychological and social motivations. He goes on to enlighten me that face reading is in fact a complimentary procedure in the bigger picture of fortune telling one’s destiny. Therefore, I suspect it’s a rather interpretative session, demanding strong engagement from the one who seeks help at the fortune teller. Similar to how horoscope and astrology works.</p>
+	<p>At the end of the day we just want to control something that was given to us by mother nature and seek deeper meaning in the materiality of our body. In fact, physiognomy and shamanism are believed to be the primitive precedence of current day Chinese opera.<sup class="footnote"><a id="fnref-12" href="#fn-12">12<br></a></sup> <span class="margin-note" id="fn-12" value="12"><a href="#fnref-12">↩12</a> Llamas, R. (2021). Reassessment of the place of shamanism in the origins of Chinese theater. Journal of the American Oriental Society, 133(1). https://doi.org/10.7817/jameroriesoci.133.1.0093.<span class="footnotereverse"></span></p>
+
+  <img src="media/image20.gif" alt="dall-e AI: stained glass storefront in art deco style in the shape of a human face"/>
+  <p class="img-caption">Result of dall-e AI with the Prompt: stained glass storefront in art deco style in the shape of a human face</p>
+
+  <div class="prologue">
+    <p>The storefront, a big glass window decorated with bright rainbow LED fairy lights. The curtains, semi transparent. The display window, filled with acupuncture models, a big A1 portrait face reading poster with sloppy typography and a magenta plasma ball shaped into the Buddha's head. The tone and the atmosphere is set.</p>
+    <p>When I enter the shop, I hear the sound of wind chimes resonating through the space. The only two other sounds I could hear was the humming of a little minibar sticking out from the small reception desk and the ticking of an elegant antic wooden pendulum clock.</p>
+    <p>Ever since I heard my boss tell me how he disliked this lady he met at church upon first glance, I was intrigued why he would make such a resolute judgement. The sentence I remember was something along the lines of "Her face isn't so auspicious." It got me curious to find out what is so unlucky about a person's face. Are we speaking of pretty privilege and how owning a conventionally unattractive face would lend you to a harsher treatment by others or is it just a euphemism to shadily say the same thing "She's a shrimp. A seafood, mostly consumed for their meat, but their head is discarded right into the bin. In other words. She's unlucky to be born with such a damn ugly face.”</p>
+    <p>However, when I finally met this lady from the church, I was perplexed why he'd call her un-pretty. She is actually ticking all the boxes of a charming person. While she has a peculiar longer face shape, her jawline is striking. Perhaps it’s just an superficial conspiracy, which he has about her personality.</p>
+    <p>I saw a shadow move through the hallway towards the main area, making the bead curtain going click-clack. The bead crystals reflected a myriad dancing light blurs behind the counter.</p>
+    <p>A man in his mid 60s made his way to the reception desk slouching the slippers along the black and white tiled floor. Halfway through his walk, he noticed where I was standing and waved his long fingered hands at me. “Hello, how could I help you out?” I noticed he had a black tattoo of a Peking opera performer on his wrist.</p>
+  </div>
+
+  <img src="media/image21.gif" alt="Face reading marketing"/>
+  <p class="img-caption">Visually interesting to see how these face reading sessions have been marketed recently. Through internet desk research I’ve compiled a bunch of these diagrams from different sources.</p>
+
+
+
+  <p class="navnote"> <a id="nnref-8" href="#nn-8">Many faces of Chinese opera</a>
+    <span class="margin-nav" id="nn-8" value="8">
+      <a href="#nnref-8">6.</a>
+      6
+      <span class="navnotereverse"></span>
+  </p>
+  <p>If we focus on the performative aspect of emoting with our face, we can even abridge this theory further into the origins of theatre. I’ll specifically focus on Peking opera and the painted face as a communication tool.</p>
+
+  <p class="para-title">Chinese Theatre</p>
+  <p>It’s important to know that Chinese opera, while being referred to as opera, places emphasis on other features than the European tradition is used to. First of all, in the Chinese tradition, there’s priority in the theatrical rather than the literary form. This means that instead of the text being the most essential piece, the performance is rigidly controlled by conventions of acting, dancing and singing. The difference can somewhat be compared to classical music versus jazz music, which is more interpretative.<sup class="footnote"><a id="fnref-13" href="#fn-13">13<br></a></sup> <span class="margin-note" id="fn-13" value="13"><a href="#fnref-13">↩13</a> Brockett, O. G. (1991). Chapter 9 The Theatre of the Orient. In History of The Theatre (6th ed., pp. 237–277). Allyn and Bacon.<span class="footnotereverse"></span></p>
+	<p>Additionally, Chinese theatre consists of four basic elements, which are singing, speaking, acting and acrobatic fighting. The type of plays are usually classified under the two categories of either civil plays, which deal with social and domestic themes, or military plays, which involve the adventures of warriors or brigands.<sup class="footnote"><a id="fnref-14" href="#fn-14">14<br></a></sup> <span class="margin-note" id="fn-14" value="14"><a href="#fnref-14">↩14</a> Ibid.<span class="footnotereverse"></span></p>
+
+  <img src="media/image22.jpg" alt="Native actor and actress, Lai Fong"/>
+  <p class="img-caption">Fig. 6.23. Lai Fong (Afong Studio). ‘No. 42. Native Actor and Actress’, 1870s.</p>
+  <img src="media/image23.jpg" alt="Group of Chinese Actors and Actresses, Lai Fong"/>
+  <p class="img-caption">Fig. 6.24. Lai Fong (Afong Studio). ‘No. 34. Group of Chinese Actors and Actresses’, 1870s.</p>
+  <img src="media/image24.jpg" alt="Chinese actors, Lai Fong"/>
+  <p class="img-caption">Fig. 6.26. Lai Fong (Afong Studio). Chinese actors, 1870s. Author’s Collection.</p>
+  <img src="media/image25.jpg" alt="Actors, Wo Cheong"/>
+  <p class="img-caption">Fig. 6.50. Wo Cheong (Cheung). Actors, 1890. Hand-tinted gelatin silver print photograph. Author’s Collection.</p>
+  <img src="media/image26.jpg" alt="Two Chinese actors, Wo Cheong"/>
+  <p class="img-caption">Fig. 6.51. Wo Cheong (Cheung). Two Chinese actors, c.1890. Hand-tinted silver print photograph. Author’s Collection.</p>
+
+  <p class="para-title">Semantics in Chinese theatre</p>
+  <p>Before I’m explaining specifically how the Peking opera Face Paint and the deeply semantic symbolism, I reckon it’s crucial to display how much meaning and conventions are embedded in all the various aspects of Chinese theatre, due to the improvising nature of the performance.</p>
+
+  <img src="media/image27.jpg" alt="Prince Zhong House"/>
+  <p class="img-caption">Chinese opera stage (Prince Zhong House)</p>
+  <img src="media/image28.jpg" alt="Farewell My Concubine"/>
+  <p class="img-caption">Still from the film ‘Farewell My Concubine’ (1993)</p>
+  <img src="media/image29.jpg" alt="A New Old Play"/>
+  <p class="img-caption">Still from the film ‘A New Old Play’ (2021), lending visual language from stage of chinese opera,it creates familiarity, despite being artistically free.</p>
+    
+  <p>A suitable illustration for this nature is characterised by the architectural usage of the playhouse. The original stages were simply the porches of temples in the early development of theatre. This influenced the currently known traditional stage, which is an open raised square platform, equipped with a carpet, and two doors. The right one as an entrance and the left one as an exit by reason of how text was written from right to left prior to modernisations. Between the doors was a large embroidered curtain. The stage was covered by a roof supported by lacquered columns. The only unchanging equipment were a wooden table and chairs.<sup class="footnote"><a id="fnref-15" href="#fn-15">15<br></a></sup> <span class="margin-note" id="fn-15" value="15"><a href="#fnref-15">↩15</a> Ibid.<span class="footnotereverse"></span></p>
+	<p>This straightforward setting allowed for swift changes of place, indicated by the actors speech, actions or props. Such actions may for instance the actor feigning knocking at gates, entering chambers, or climbing steps. If the actor circled the stage, it indicated a tedious journey. The table and chairs might symbolise a law court, banqueting hall or other scene, for each of which furniture was fixed according to a defined formula.<sup class="footnote"><a id="fnref-16" href="#fn-16">16<br></a></sup> <span class="margin-note" id="fn-16" value="16"><a href="#fnref-16">↩16</a> Ibid.<span class="footnotereverse"></span></p>
+	<p>Additionally, adding props to this set, specifies the scene considerably:</p>
+  <blockquote class="quote">“an incense tripod on the table indicated a place; paper and an official seal indicated an office; an embroidered, divided curtain hung from a bamboo pole signified a general’s tent, an emperor’s chamber, a drawing room, or a bride’s bedroom, depending upon the other properties with which it was combined.”</blockquote>
+  <p class="quote-caption">“Chapter 9 the theatre of the orient” History of the theatre 6th edition, Oscar G. Brockett</p>
+  
+  <p class="para-title">The Actor's painted face</p>
+  <p>In the Chinese canon of operatic performances, we see a specifically signified layer of symbolic face paint that tells a story to the audience, beyond the facial performativity of the actor. This had a reason. In order to democratically perform for layer of society, including the illiterate (which was most of people in the feudal Dynastic period), the sung lyrics were not the only way of expressing a narrative, but additional background information, characterisation and archetypes were expressed through aesthetic symbols on the face of the actor.</p>
+  <p>We can for example look at the different categories of roles in Chinese opera; male, female, painted face and comic. The male roles were subdivided into young, old and warrior men. Usually the male roles wore exaggerated beards, unless if they are a young role. The female roles were part into gentle, dissolute, warrior or old women roles.</p>
+  <p>Surprisingly, most female roles during the 18th and 19th century were forbidden to be portrayed by women, resulting in the custom of cross-dressing in the male actor’s realm of acting, producing an early on dialogue on gender during the modernisation period of the Republic of China. After 1911, women returned to the stage, taking over their roles.</p>
+	<p>The painted face roles are often elaborately patterned faces, playing deceitful roles, such as bandits, officials, gods and supernatural entities. While the comic actor speaks in everyday dialect, improvises and is the most realistic of all characters, often lending a good medium to bridge the story to the audience.</p>
+	<p>The bearded male roles usually barely wear face paint. However, the unbearded male has a white face with a pink blush around the eyes and cheeks, similarly to the female role. What distinguishes the comic is the white patch around the eyes, as well as how black markings differentiate the particular comic.<sup class="footnote"><a id="fnref-17" href="#fn-17">17<br></a></sup> <span class="margin-note" id="fn-17" value="17"><a href="#fnref-17">↩17</a> Ibid.<span class="footnotereverse"></span></p>
+  <p>Painted face roles are often more specific since they tend to depict a known character who has particularities in their back stories. These are often condensed into the face paint:<sup class="footnote"><a id="fnref-18" href="#fn-18">18<br></a></sup> <span class="margin-note" id="fn-18" value="18"><a href="#fnref-18">↩18</a> Wang, D., Kang, J., Qin, S.-F., & Birringer, J. (2015). Cultural-based visual expression: Emotional analysis of human face via Peking Opera Painted Faces (POPF). Multimedia Tools and Applications, 75(19), 11865–11891. https://doi.org/10.1007/s11042-015-2665-7.<span class="footnotereverse"></span></p>
+	
+  <img src="media/image30.jpg" class="full-image" alt="A New Old Play"/>
+  <p class="img-caption">Top to bottom:<br>Hou Yi: 9 dots represents the 9 suns he shot down, Huyan Zan: the character 王 [king] points out he’s the Chief of the Xiongnu, Zhong Lichun: the lotus flower represents a female warrior and Li Keyong: 3 scratches illustrate he was once scratched by an eagle.</p>
+
+
+
+  7. Facing control
+If we look at the previous chapters, we discovered that we are in fact aware of our environment, in which we interact with individuals. In this chapter I’ll explore the idea of freewill an power structures.
+
+Facing a new culture
+In 1966 in the People’s Republic of China, a political campaign, the Cultural Revolution, was launched by Mao Zedong. His stated goal of this political campaign was to preserve Chinese communism by cleansing the Chinese society from remnants of capitalist and traditional elements. This campaign led by the mobilised youth, the Red Guards, created a personality cult around Mao and his iconic face. One might argue that this substituted a once (and officiously still) religiously diverse geography of various worshipped deities for his own cult. A cult, which results in a constant reminder of the Chinese Communist Party, a fly on the wall, Big Brother is watching you; a Panopticum of some sorts, if you will.
+
+Mao Zedong in 1963
+
+
+panopticum: Construction of the dome prison in Haarlem, 1899 - 1901
+	During this period one of the goals was to get rid of the Four Olds; namely, old customs, culture, habits, and ideas. Specifically concerning Beijing opera, Jiang Qing took control of the stage and introduced the revolutionary model operas under her direct supervision. Traditional operas were banned as they were considered feudalistic and bourgeois, yet revolutionary opera, which is based on Peking opera, modified in both content and form, was promoted.
+	While traditional Chinese opera found a didactic function  educating and forming the illiterate demographic at the turn of the 20th century, during the Cultural Revolution, this function had been polished to be a vehicle of mass propaganda and spreading Mao’s teachings. Taking the form of the original performance, but changing the topics completely, erasing "emperors, kings, generals, chancellors, maidens, and beauties" of the traditional Peking opera.
+	Many performers in the field of opera were persecuted. Academics and intellectuals were regarded as the "Stinking Old Ninth" and were widely persecuted. In the 1960s and 1970s, many were sent to rural labor camps such as the May Seventh Cadre School.
+	We see, our face and performance of our identity is at all times in a dance with the macro environments we move between. A once distinctive profession of Chinese traditional culture has become a persecuted livelihood and brand marked as feudalist, elitist or capitalist. Not the face of a poverty stricken and oppressed farmer, but the face of an elitist pig bourgeoning and indulging oneself in the art of, ‘What?’, entertainment.
+
+Anticipation conjuring the face
+Judith Butler illustrates another way these macro superstructures can manifest. She argues that we indeed have no core identity, in her case specifically about gender identity, and that the naturalisation and politicisation of heterosexuality is an unnecessary fiction. In fact, we’re always in a process of acquiring gender. We should quote Simone de Beauvoir that ‘one is not born but becomes a woman.’ She argues that gender is ‘an historical idea’, which Butler expands on saying it’s ‘the anticipation conjuring its object.’ It’s therefore important to acknowledge these historical, social and power structures that enforce identities onto us.
+
+To face the digital
+Currently, our face is in fact in a chokehold between an expected social performance and the ever growing digital and technical control enforced by states and corporations. Add into the mix the spiritual predetermined fate our face is given to us, it leaves little room to imagine what life’s like without so much monitoring.	There’s a parallel between the idea of growing digital control of our face, such as digital biodata stored for government administrations, which enforces segregation and invasion of privacy in occupied areas such as Xinjiang (China), disproportionately trained algorithms used by the police to scan criminals, accidentally misrepresenting us in studies, but also the trend to AI generate custom bespoke portraits of oneself, without knowing what your personal data is used or sold for.
+	It seems that our biological data and, in our modern day specifically, the function of our face to confirm or pigeonhole our identity, does bring the topic of predestined fate versus freewill to the table.
+	What does it mean if your face has an unfortunate database behind it? What is the difference between current power structures and the structures of identifying luck and misfortune through physiognomy? What if the category itself, which our society divides people by is as such already a bias? Perhaps the calculations are more precise and parameters that influence this outcome stronger. Nonetheless, it’s an important mental exercise to be aware of a once mystical practice to have now access to technology to confirm its bias.
 </body>
 </html>

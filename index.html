@@ -15,7 +15,7 @@
       font-family: 'Kosugi Maru', sans-serif;
       font-size: 24px;
       color: #000000;
-      background-color: #ffffff;
+      background-color: white;
     }
 
     body{
@@ -80,6 +80,7 @@
       width: 10vw;
       height: 10vw;
       background-color: red;
+      box-shadow: 0px 0px 2.5vw red;
     }
     .title-glyph{
       text-align: center;
@@ -104,7 +105,7 @@
       .thesis-content {
         max-width: 100%;
         font-size: 0.5em;
-        text-align: justify;
+        text-align: left;
         padding: 0;
         margin-left: 20px;
         margin-right: 20px;
@@ -147,15 +148,18 @@
 
     blockquote {
       margin: 0;
+      
     }
 
     .prologue{
-      width: 100vw;
-      left: -25vw;
+      width: 80vw;
+      left: -15vw;
       margin: 0;
       position: relative;
       font-size: 48px;
       color: blue;
+      box-shadow: 0px 0px 2.5vw blue;
+      border-radius: 1vw;
     }
     .quote{
       width: 50vw;
@@ -163,19 +167,21 @@
       margin:0;
       position: relative;
       font-size: 36px;
-      font-style: italic;
+      box-shadow: 0px 0px 2.5vw blue;
+      border-radius: 1vw;
+      color: blue;
     }
 
     @media screen and (max-width: 780px){
       .prologue{
         left:-20px;
         font-size: 24px;
+        width: 100vw;
       }
       .quote{
         left:-20px;
         font-size: 24px;
         width: 100vw;
-        font-style: italic;
       }
     }
 
@@ -313,9 +319,17 @@
       border-radius: 10px;
       color:#000000;
     }
-    blockquote:hover{
+    .quote:hover{
       z-index: 9999;
-      background: #FFFF00;
+      background: blue;
+      color: white;
+      box-shadow: 0px 0px 2.5vw blue;
+    }
+    .prologue:hover{
+      z-index: 9999;
+      background: rgb(255, 180, 180);
+      color: white;
+      box-shadow: 0px 0px 2.5vw rgb(255, 180, 180);
     }
       @media screen and (max-width: 780px){
         .margin-note{
@@ -328,9 +342,16 @@
       }
 
     .para-title{
-      font-weight: bold;
+      font-family: 'Great Vibes', cursive;
+      font-size: 30px; 
     }
-
+    @media screen and (max-width: 780px){
+    .para-title{
+      font-family: 'Great Vibes', cursive;
+      font-size: 30px; 
+    }
+    }
+    
     th {
       border-top: 1px solid #1a1a1a;
       padding: 0.25em 0.5em 0.25em 0.5em;
@@ -456,7 +477,6 @@
   </div>
 
   <div class="thesis-title">
-    <div class="title-circle"><p class="title-glyph">*</p></div>
     <div class="thesis-name3">
       <p class="title-glyph">Face</p>
     </div>
@@ -464,6 +484,7 @@
     <div class="thesis-name">
       <p class="title-glyph">Reading</p>
     </div>
+    <div class="title-circle"><p class="title-glyph">*</p></div>
   </div>
 
 
@@ -529,11 +550,14 @@
     <p>No wonder linguistically and etymologically, the term ‘face’ has  for instance the following different meanings.
       The face of the mountain (front side something).</p>
 
-    <ol>
-      <li>The face of the mountain (front side something).</li>
-      <li>Losing face (losing one’s dignity).</li>
-      <li>To let down one’s facade (a front you put up to hide real emotions).</li>
-    </ol>
+
+    <blockquote class="quote">
+      <ol>
+        <li>The face of the mountain (front side something).</li>
+        <li>Losing face (losing one’s dignity).</li>
+        <li>To let down one’s facade (a front you put up to hide real emotions).</li>
+      </ol>
+    </blockquote>
 
     <img src="media/image3.jpg" alt="Mount Rushmore"/>
     <p class="img-caption">Mount Rushmore, showing the full size of the mountain and scree of rocks below from sculpting and construction</p>
